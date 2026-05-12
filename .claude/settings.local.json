@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "Bash(node -e \":*)",
+      "Bash(npm install:*)",
+      "Bash(textutil:*)",
+      "Bash(brew list *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git -C /Users/f5rany/Documents/Work/amancool log --oneline --all)",
+      "Bash(git -C /Users/f5rany/Documents/Work/amancool show --stat 4cc053f)"
+    ]
+  }
+}
