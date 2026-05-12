@@ -1219,6 +1219,17 @@
 
       .solution-grid {
         grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .solution-image-frame {
+        height: 260px;
+        min-height: unset;
+      }
+
+      .solution-image-frame img {
+        height: 100%;
+        object-fit: cover;
       }
 
       .products-grid {
@@ -1315,6 +1326,11 @@
       html[dir="ltr"] .hero-stat+.hero-stat {
         border: none;
         padding: 0;
+      }
+
+      .solution-body {
+        font-size: 15px;
+        line-height: 1.8;
       }
     }
 
@@ -1598,6 +1614,18 @@
       transform: scale(1.04);
     }
 
+    @media (hover: none) {
+      html[dir="rtl"] .benefit-row:hover,
+      html[dir="ltr"] .benefit-row:hover {
+        padding-right: 0;
+        padding-left: 0;
+      }
+      .benefit-row:hover .benefit-dot {
+        transform: none;
+        box-shadow: none;
+      }
+    }
+
     @media (prefers-reduced-motion: reduce) {
       .hero-floating-badge { animation: none; }
       .whatsapp-quote-btn { animation: none; }
@@ -1672,6 +1700,17 @@
     }
 
     @media (max-width: 900px) {
+      .reveal-left,
+      .reveal-right,
+      html[dir="rtl"] .reveal-left,
+      html[dir="rtl"] .reveal-right,
+      html[dir="ltr"] .reveal-left,
+      html[dir="ltr"] .reveal-right {
+        transform: translateY(20px);
+      }
+    }
+
+    @media (max-width: 900px) {
       .whatsapp-quote-btn {
         position: static;
         margin-top: 20px;
@@ -1680,11 +1719,15 @@
         right: auto;
         animation: none;
         box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+        white-space: normal;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
       }
       .solution-image-wrap {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
       }
     }
 
