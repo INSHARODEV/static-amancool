@@ -76,20 +76,46 @@
 
     /* ─── HERO ENTRANCE ───────────────────────────────── */
     @keyframes heroFadeUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to   { opacity: 1; transform: none; }
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+
+      to {
+        opacity: 1;
+        transform: none;
+      }
     }
 
     @keyframes heroFadeIn {
-      from { opacity: 0; }
-      to   { opacity: 1; }
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
     }
 
-    .hero-animate-1 { animation: heroFadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both; }
-    .hero-animate-2 { animation: heroFadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.25s both; }
-    .hero-animate-3 { animation: heroFadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.4s both; }
-    .hero-animate-4 { animation: heroFadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.55s both; }
-    .hero-animate-img { animation: heroFadeIn 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both; }
+    .hero-animate-1 {
+      animation: heroFadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+    }
+
+    .hero-animate-2 {
+      animation: heroFadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.25s both;
+    }
+
+    .hero-animate-3 {
+      animation: heroFadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.4s both;
+    }
+
+    .hero-animate-4 {
+      animation: heroFadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.55s both;
+    }
+
+    .hero-animate-img {
+      animation: heroFadeIn 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
+    }
 
     /* ─── SCROLL REVEAL ────────────────────────────────── */
     .reveal,
@@ -101,14 +127,33 @@
       will-change: transform, opacity;
     }
 
-    .reveal        { transform: translateY(28px); }
-    .reveal-fade   { transform: none; }
-    .reveal-scale  { transform: translateY(16px) scale(0.97); }
-    .reveal-left   { transform: translateX(-28px); }
-    .reveal-right  { transform: translateX(28px); }
+    .reveal {
+      transform: translateY(28px);
+    }
 
-    html[dir="rtl"] .reveal-left  { transform: translateX(28px); }
-    html[dir="rtl"] .reveal-right { transform: translateX(-28px); }
+    .reveal-fade {
+      transform: none;
+    }
+
+    .reveal-scale {
+      transform: translateY(16px) scale(0.97);
+    }
+
+    .reveal-left {
+      transform: translateX(-28px);
+    }
+
+    .reveal-right {
+      transform: translateX(28px);
+    }
+
+    html[dir="rtl"] .reveal-left {
+      transform: translateX(28px);
+    }
+
+    html[dir="rtl"] .reveal-right {
+      transform: translateX(-28px);
+    }
 
     .reveal.visible,
     .reveal-fade.visible,
@@ -118,20 +163,45 @@
       opacity: 1;
       transform: none;
       transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
-                  transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+        transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
       will-change: auto;
     }
 
-    .reveal-delay-1 { transition-delay: 0.08s; }
-    .reveal-delay-2 { transition-delay: 0.16s; }
-    .reveal-delay-3 { transition-delay: 0.24s; }
-    .reveal-delay-4 { transition-delay: 0.32s; }
-    .reveal-delay-5 { transition-delay: 0.40s; }
+    .reveal-delay-1 {
+      transition-delay: 0.08s;
+    }
+
+    .reveal-delay-2 {
+      transition-delay: 0.16s;
+    }
+
+    .reveal-delay-3 {
+      transition-delay: 0.24s;
+    }
+
+    .reveal-delay-4 {
+      transition-delay: 0.32s;
+    }
+
+    .reveal-delay-5 {
+      transition-delay: 0.40s;
+    }
 
     @media (prefers-reduced-motion: reduce) {
-      .hero-animate-1, .hero-animate-2, .hero-animate-3,
-      .hero-animate-4, .hero-animate-img { animation: none; }
-      .reveal, .reveal-fade, .reveal-scale, .reveal-left, .reveal-right {
+
+      .hero-animate-1,
+      .hero-animate-2,
+      .hero-animate-3,
+      .hero-animate-4,
+      .hero-animate-img {
+        animation: none;
+      }
+
+      .reveal,
+      .reveal-fade,
+      .reveal-scale,
+      .reveal-left,
+      .reveal-right {
         opacity: 1;
         transform: none;
         transition: none;
@@ -612,8 +682,13 @@
       white-space: nowrap;
     }
 
-    html[dir="rtl"] .whatsapp-quote-btn { left: -20px; }
-    html[dir="ltr"] .whatsapp-quote-btn { right: 24px; }
+    html[dir="rtl"] .whatsapp-quote-btn {
+      left: -20px;
+    }
+
+    html[dir="ltr"] .whatsapp-quote-btn {
+      right: 24px;
+    }
 
     .whatsapp-quote-btn:hover {
       transform: translateY(-2px);
@@ -1146,7 +1221,8 @@
       color: rgba(255, 255, 255, 0.45);
       font-size: 14px;
       margin-bottom: 12px;
-      transition: color 0.2s;;
+      transition: color 0.2s;
+      ;
     }
 
     .footer-links a:hover {
@@ -1339,6 +1415,7 @@
         grid-template-columns: 1fr;
       }
     }
+
     /* ═══════════════════════════════════════════════════
        HOVER & INTERACTION ANIMATIONS
     ═══════════════════════════════════════════════════ */
@@ -1347,6 +1424,7 @@
     .header-nav a {
       position: relative;
     }
+
     .header-nav a::after {
       content: '';
       position: absolute;
@@ -1357,31 +1435,54 @@
       background: #fff;
       transition: width 0.25s cubic-bezier(0.22, 1, 0.36, 1);
     }
-    html[dir="ltr"] .header-nav a::after { left: 0; right: auto; }
-    .header-nav a:hover::after { width: 100%; }
+
+    html[dir="ltr"] .header-nav a::after {
+      left: 0;
+      right: auto;
+    }
+
+    .header-nav a:hover::after {
+      width: 100%;
+    }
 
     /* ─── WA button — shimmer on hover ─── */
     .wa-btn {
       position: relative;
       overflow: hidden;
     }
+
     .wa-btn::after {
       content: '';
       position: absolute;
-      top: 0; left: -100%;
+      top: 0;
+      left: -100%;
       width: 60%;
       height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
       transition: left 0.45s ease;
     }
-    .wa-btn:hover::after { left: 160%; }
-    .wa-btn:active { transform: scale(0.97); }
+
+    .wa-btn:hover::after {
+      left: 160%;
+    }
+
+    .wa-btn:active {
+      transform: scale(0.97);
+    }
 
     /* ─── Hero floating badge — float loop ─── */
     @keyframes floatBadge {
-      0%, 100% { transform: translateY(0); }
-      50%       { transform: translateY(-6px); }
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-6px);
+      }
     }
+
     .hero-floating-badge {
       animation: floatBadge 3s ease-in-out infinite;
     }
@@ -1390,6 +1491,7 @@
     .hero-image-frame {
       transition: box-shadow 0.4s ease;
     }
+
     .hero-image-frame:hover {
       box-shadow: 0 24px 64px rgba(81, 192, 230, 0.15);
     }
@@ -1397,16 +1499,19 @@
     /* ─── Problem items — lift + border accent ─── */
     .problem-item {
       transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
-                  box-shadow 0.3s ease;
+        box-shadow 0.3s ease;
       border-radius: 6px;
     }
+
     .problem-item:hover {
       transform: translateY(-4px);
       box-shadow: 0 16px 48px rgba(11, 29, 46, 0.1);
     }
+
     .problem-num {
       transition: color 0.3s ease;
     }
+
     .problem-item:hover .problem-num {
       color: rgba(207, 34, 41, 0.15);
     }
@@ -1415,12 +1520,20 @@
     .benefit-row {
       transition: padding 0.25s ease;
     }
-    html[dir="rtl"] .benefit-row:hover { padding-right: 8px; }
-    html[dir="ltr"] .benefit-row:hover { padding-left: 8px; }
+
+    html[dir="rtl"] .benefit-row:hover {
+      padding-right: 8px;
+    }
+
+    html[dir="ltr"] .benefit-row:hover {
+      padding-left: 8px;
+    }
+
     .benefit-dot {
       transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
-                  box-shadow 0.25s ease;
+        box-shadow 0.25s ease;
     }
+
     .benefit-row:hover .benefit-dot {
       transform: scale(1.6);
       box-shadow: 0 0 0 4px rgba(81, 192, 230, 0.2);
@@ -1430,19 +1543,24 @@
     .step-num {
       transition: color 0.35s ease;
     }
+
     .step-item:hover .step-num {
       color: rgba(207, 34, 41, 0.12);
     }
+
     .step-item h3 {
       transition: color 0.25s ease;
     }
+
     .step-item:hover h3 {
       color: var(--blue);
     }
+
     .step-image {
       transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
       overflow: hidden;
     }
+
     .step-item:hover .step-image {
       transform: translateY(-4px);
     }
@@ -1450,15 +1568,18 @@
     /* ─── Why items — accent line expand ─── */
     .why-accent {
       transition: width 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-                  background 0.25s ease;
+        background 0.25s ease;
     }
+
     .why-item:hover .why-accent {
       width: 56px;
       background: var(--sky);
     }
+
     .why-item h4 {
       transition: color 0.25s ease;
     }
+
     .why-item:hover h4 {
       color: var(--sky);
     }
@@ -1468,8 +1589,15 @@
       position: relative;
       transition: opacity 0.25s ease, padding 0.25s ease;
     }
-    html[dir="rtl"] .testimonial-tab { padding-right: 0; }
-    html[dir="ltr"] .testimonial-tab { padding-left: 0; }
+
+    html[dir="rtl"] .testimonial-tab {
+      padding-right: 0;
+    }
+
+    html[dir="ltr"] .testimonial-tab {
+      padding-left: 0;
+    }
+
     .testimonial-tab::before {
       content: '';
       position: absolute;
@@ -1481,58 +1609,86 @@
       transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
       border-radius: 1px;
     }
-    html[dir="rtl"] .testimonial-tab::before { right: 0; }
-    html[dir="ltr"] .testimonial-tab::before { left: 0; }
-    html[dir="rtl"] .testimonial-tab.active { padding-right: 16px; }
-    html[dir="ltr"] .testimonial-tab.active { padding-left: 16px; }
-    .testimonial-tab.active::before { transform: translateY(-50%) scaleY(1); }
+
+    html[dir="rtl"] .testimonial-tab::before {
+      right: 0;
+    }
+
+    html[dir="ltr"] .testimonial-tab::before {
+      left: 0;
+    }
+
+    html[dir="rtl"] .testimonial-tab.active {
+      padding-right: 16px;
+    }
+
+    html[dir="ltr"] .testimonial-tab.active {
+      padding-left: 16px;
+    }
+
+    .testimonial-tab.active::before {
+      transform: translateY(-50%) scaleY(1);
+    }
 
     /* ─── FAQ — smooth answer slide ─── */
     .faq-answer {
       display: grid;
       grid-template-rows: 0fr;
       transition: grid-template-rows 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-                  padding-bottom 0.35s ease;
+        padding-bottom 0.35s ease;
       overflow: hidden;
       padding-bottom: 0;
     }
+
     .faq-answer-inner {
       overflow: hidden;
     }
+
     .faq-item.open .faq-answer {
       grid-template-rows: 1fr;
       padding-bottom: 24px;
       display: grid;
     }
+
     .faq-question {
       transition: color 0.2s ease;
     }
+
     .faq-question:hover {
       color: var(--blue);
     }
+
     .faq-icon {
       transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), color 0.2s ease;
     }
-    .faq-item.open .faq-icon { color: var(--red); }
+
+    .faq-item.open .faq-icon {
+      color: var(--red);
+    }
 
     /* ─── CTA banner button — lift + glow ─── */
     .cta-main-btn {
       transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
-                  box-shadow 0.25s ease;
+        box-shadow 0.25s ease;
     }
+
     .cta-main-btn:hover {
       transform: translateY(-3px);
       box-shadow: 0 16px 48px rgba(0, 0, 0, 0.25);
     }
-    .cta-main-btn:active { transform: scale(0.98); }
+
+    .cta-main-btn:active {
+      transform: scale(0.98);
+    }
 
     /* ─── Social links — scale + glow ─── */
     .social-link {
       transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
-                  border-color 0.25s ease,
-                  color 0.25s ease,
-                  box-shadow 0.25s ease;
+        border-color 0.25s ease,
+        color 0.25s ease,
+        box-shadow 0.25s ease;
     }
+
     .social-link:hover {
       transform: translateY(-3px) scale(1.1);
       box-shadow: 0 4px 16px rgba(255, 255, 255, 0.08);
@@ -1544,6 +1700,7 @@
       display: block;
       width: fit-content;
     }
+
     .footer-links a::after {
       content: '';
       position: absolute;
@@ -1551,21 +1708,38 @@
       right: 0;
       width: 0;
       height: 1px;
-      background: rgba(255,255,255,0.45);
+      background: rgba(255, 255, 255, 0.45);
       transition: width 0.25s cubic-bezier(0.22, 1, 0.36, 1);
     }
-    html[dir="ltr"] .footer-links a::after { left: 0; right: auto; }
-    .footer-links a:hover::after { width: 100%; }
+
+    html[dir="ltr"] .footer-links a::after {
+      left: 0;
+      right: auto;
+    }
+
+    .footer-links a:hover::after {
+      width: 100%;
+    }
 
     /* ─── WhatsApp floating pulse ring (solution image) ─── */
     @keyframes waPulse {
-      0%   { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
-      70%  { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+      }
+
+      70% {
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
     }
+
     .whatsapp-quote-btn {
       animation: waPulse 2.5s ease-out infinite;
     }
+
     .whatsapp-quote-btn:hover {
       animation: none;
       box-shadow: 0 8px 24px rgba(37, 211, 102, 0.55);
@@ -1576,6 +1750,7 @@
       display: inline-block;
       transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
     }
+
     #header .logo-link:hover {
       transform: scale(1.07);
     }
@@ -1584,6 +1759,7 @@
     .why-item {
       transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
     }
+
     .why-item:hover {
       transform: scale(1.04);
     }
@@ -1593,6 +1769,7 @@
       transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
       border-radius: 6px;
     }
+
     .step-item:hover {
       transform: translateY(-4px) scale(1.02);
     }
@@ -1602,6 +1779,7 @@
       transform: scale(1.02);
       opacity: 0.85;
     }
+
     .testimonial-tab.active:hover {
       opacity: 1;
     }
@@ -1610,16 +1788,19 @@
     .solution-image-frame img {
       transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
     }
+
     .solution-image-wrap:hover .solution-image-frame img {
       transform: scale(1.04);
     }
 
     @media (hover: none) {
+
       html[dir="rtl"] .benefit-row:hover,
       html[dir="ltr"] .benefit-row:hover {
         padding-right: 0;
         padding-left: 0;
       }
+
       .benefit-row:hover .benefit-dot {
         transform: none;
         box-shadow: none;
@@ -1627,14 +1808,22 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .hero-floating-badge { animation: none; }
-      .whatsapp-quote-btn { animation: none; }
+      .hero-floating-badge {
+        animation: none;
+      }
+
+      .whatsapp-quote-btn {
+        animation: none;
+      }
+
       .step-item:hover,
       .why-item:hover,
       .step-item:hover .step-image,
       .social-link:hover,
       .cta-main-btn:hover,
-      #header .logo-link:hover { transform: none; }
+      #header .logo-link:hover {
+        transform: none;
+      }
     }
 
     /* ─── HAMBURGER ──────────────────────────────────── */
@@ -1648,6 +1837,7 @@
       cursor: pointer;
       padding: 8px;
     }
+
     .hamburger span {
       display: block;
       width: 22px;
@@ -1656,9 +1846,18 @@
       border-radius: 1px;
       transition: transform 0.3s ease, opacity 0.3s ease;
     }
-    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-    .hamburger.open span:nth-child(2) { opacity: 0; }
-    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .hamburger.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
 
     /* ─── MOBILE MENU ────────────────────────────────── */
     .mobile-menu {
@@ -1673,23 +1872,40 @@
       gap: 36px;
       padding: 110px 40px 60px;
     }
-    .mobile-menu.open { display: flex; }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
     .mobile-menu a {
       color: rgba(255, 255, 255, 0.75);
       font-size: 22px;
       font-weight: 700;
       transition: color 0.2s;
     }
-    .mobile-menu a:hover { color: #fff; }
+
+    .mobile-menu a:hover {
+      color: #fff;
+    }
 
     @media (max-width: 900px) {
-      .hamburger { display: flex; }
-      .header-actions .wa-btn { display: none; }
+      .hamburger {
+        display: flex;
+      }
+
+      .header-actions .wa-btn {
+        display: none;
+      }
     }
 
     @media (max-width: 768px) {
-      .header-inner { height: 72px; }
-      .mobile-menu { padding-top: 72px; }
+      .header-inner {
+        height: 72px;
+      }
+
+      .mobile-menu {
+        padding-top: 72px;
+      }
     }
 
     @media (min-width: 600px) and (max-width: 900px) {
@@ -1700,6 +1916,7 @@
     }
 
     @media (max-width: 900px) {
+
       .reveal-left,
       .reveal-right,
       html[dir="rtl"] .reveal-left,
@@ -1724,13 +1941,13 @@
         justify-content: center;
         text-align: center;
       }
+
       .solution-image-wrap {
         display: flex;
         flex-direction: column;
         align-items: stretch;
       }
     }
-
   </style>
 </head>
 
@@ -1783,7 +2000,8 @@
     <a href="https://wa.me/966554467711?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%A3%D9%85%D8%A7%D9%86%20%D9%83%D9%88%D9%84"
       target="_blank" rel="noopener" class="wa-btn" onclick="closeMobileMenu()">
       <svg class="wa-svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
       </svg>
       <span data-ar="اطلب عرض سعر" data-en="reach out on Whatsapp">اطلب عرض سعر</span>
     </a>
@@ -1800,15 +2018,14 @@
       <div class="hero-grid">
         <!-- Text -->
         <div>
-          <div class="hero-eyebrow hero-animate-1">
-            <span class="hero-eyebrow-line"></span>
-            <span data-ar="جهاز ميني تشيلر ذكي" data-en="Smart Mini Chiller Device">جهاز ميني تشيلر ذكي</span>
-          </div>
           <h1 class="hero-animate-2">
-            <span style="display:block;" data-ar="جهاز أمان كول الذكي" data-en="The AmanCool Smart Device">جهاز أمان كول الذكي</span>
-            <span style="display:block;" class="highlight" data-ar="تحكم مثالي بدرجة حرارة المياه طوال العام" data-en="Perfect Water Temperature Control All Year">تحكم مثالي بدرجة حرارة المياه طوال العام</span>
+            <span style="display:block;" data-ar="جهاز أمان كول الذكي" data-en="The AmanCool Smart Device">جهاز أمان كول
+              الذكي</span>
+            <span style="display:block;" class="highlight" data-ar="تحكم مثالي بدرجة حرارة المياه طوال العام"
+              data-en="Perfect Water Temperature Control All Year">تحكم مثالي بدرجة حرارة المياه طوال العام</span>
           </h1>
-          <p class="hero-body hero-animate-3" data-ar="يبرد المياه في الصيف ويسخنها في الشتاء — حل آمن، موفر للطاقة، وسهل التركيب."
+          <p class="hero-body hero-animate-3"
+            data-ar="يبرد المياه في الصيف ويسخنها في الشتاء — حل آمن، موفر للطاقة، وسهل التركيب."
             data-en="Cools water in summer, heats it in winter — a safe, energy-efficient, and easy-to-install solution.">
             يبرد المياه في الصيف ويسخنها في الشتاء — حل آمن، موفر للطاقة، وسهل التركيب.</p>
           <div class="hero-ctas hero-animate-4">
@@ -1829,28 +2046,30 @@
           <!-- Stats -->
           <div class="hero-stats">
             <div class="hero-stat">
-              <div class="hero-stat-number" data-ar="تقنية محلية مصممة لاحتياجات المنازل في السعودية" data-en="Local technology built for Saudi homes">تقنية محلية مصممة لاحتياجات المنازل في السعودية</div>
+              <div class="hero-stat-number" data-ar="تقنية محلية مصممة لاحتياجات المنازل في السعودية"
+                data-en="Local technology built for Saudi homes">تقنية محلية مصممة لاحتياجات المنازل في السعودية</div>
             </div>
             <div class="hero-stat">
-              <div class="hero-stat-number" data-ar="موفر للطاقة ويقلل الاعتماد على الحلول التقليدية" data-en="Energy efficient — reduces reliance on traditional solutions">موفر للطاقة ويقلل الاعتماد على الحلول التقليدية</div>
+              <div class="hero-stat-number" data-ar="موفر للطاقة ويقلل الاعتماد على الحلول التقليدية"
+                data-en="Energy efficient — reduces reliance on traditional solutions">موفر للطاقة ويقلل الاعتماد على
+                الحلول التقليدية</div>
             </div>
             <div class="hero-stat">
-              <div class="hero-stat-number" data-ar="آمن في الاستخدام ومناسب للاستخدام اليومي" data-en="Safe for daily use">آمن في الاستخدام ومناسب للاستخدام اليومي</div>
+              <div class="hero-stat-number" data-ar="آمن في الاستخدام ومناسب للاستخدام اليومي"
+                data-en="Safe for daily use">آمن في الاستخدام ومناسب للاستخدام اليومي</div>
             </div>
             <div class="hero-stat">
-              <div class="hero-stat-number" data-ar="تركيب سريع مع خدمة ما بعد البيع" data-en="Fast installation with after-sales service">تركيب سريع مع خدمة ما بعد البيع</div>
             </div>
           </div>
-        </div>
 
-        <!-- Hero Image -->
-        <div class="hero-image-wrap hero-animate-img">
-          <img src="saudi_man.png" alt="Saudi Man" class="hero-image">
-          <div class="hero-floating-badge" data-ar="جهاز واحد — حل كامل" data-en="One Device — Complete Solution">جهاز
-            واحد — حل كامل</div>
+          <!-- Hero Image -->
+          <div class="hero-image-wrap hero-animate-img">
+            <img src="saudi_man.png" alt="Saudi Man" class="hero-image">
+            <div class="hero-floating-badge" data-ar="جهاز واحد — حل كامل" data-en="One Device — Complete Solution">جهاز
+              واحد — حل كامل</div>
+          </div>
         </div>
       </div>
-    </div>
   </section>
 
 
@@ -1898,7 +2117,8 @@
           <p class="solution-body reveal"
             data-ar="أمان كول هو جهاز ميني تشيلر ذكي يتصل بمصدر المياه في المنزل، ليحافظ على درجة حرارة مناسبة للمياه صيفًا وشتاءً."
             data-en="AmanCool is a smart mini chiller that connects to your home's water source, maintaining a comfortable water temperature all year round.">
-            أمان كول هو جهاز ميني تشيلر ذكي يتصل بمصدر المياه في المنزل، ليحافظ على درجة حرارة مناسبة للمياه صيفًا وشتاءً.</p>
+            أمان كول هو جهاز ميني تشيلر ذكي يتصل بمصدر المياه في المنزل، ليحافظ على درجة حرارة مناسبة للمياه صيفًا
+            وشتاءً.</p>
           <div class="benefit-list">
             <div class="benefit-row reveal reveal-delay-1">
               <span class="benefit-dot"></span>
@@ -1917,13 +2137,14 @@
             </div>
             <div class="benefit-row reveal reveal-delay-4">
               <span class="benefit-dot"></span>
-              <span class="benefit-text" data-ar="بدون صيانة دورية" data-en="No Routine Maintenance">بدون صيانة
-                دورية</span>
+              <span class="benefit-text" data-ar="صيانة عند الحاجة فقط" data-en="No Routine Maintenance">صيانة عند
+                الحاجة فقط</span>
             </div>
             <div class="benefit-row reveal reveal-delay-5">
               <span class="benefit-dot"></span>
-              <span class="benefit-text" data-ar="سهل التركيب في أي مكان" data-en="Easy Installation anywhere">سهل
-                التركيب في أي مكان</span>
+              <span class="benefit-text" data-ar="سهل التركيب بجانب الخزان العلوي ويحتاج فقط الى منفذ كهرباء"
+                data-en="Easy Installation anywhere">
+                سهل التركيب بجانب الخزان العلوي ويحتاج فقط الى منفذ كهرباء</span>
             </div>
           </div>
         </div>
@@ -1931,12 +2152,15 @@
           <div class="solution-image-frame">
             <img src="product.png" alt="Product Image">
           </div>
-          <a href="https://wa.me/966554467711?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%A3%D9%85%D8%A7%D9%86%20%D9%83%D9%88%D9%84" target="_blank" rel="noopener" class="whatsapp-quote-btn"
-            data-ar="اطلب عرض سعر عبر واتساب" data-en="Request a Quote via WhatsApp">
+          <a href="https://wa.me/966554467711?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%A3%D9%85%D8%A7%D9%86%20%D9%83%D9%88%D9%84"
+            target="_blank" rel="noopener" class="whatsapp-quote-btn" data-ar="اطلب عرض سعر عبر واتساب"
+            data-en="Request a Quote via WhatsApp">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
             </svg>
-            <span data-ar="اطلب عرض سعر عبر واتساب" data-en="Request a Quote via WhatsApp">اطلب عرض سعر عبر واتساب</span>
+            <span data-ar="اطلب عرض سعر عبر واتساب" data-en="Request a Quote via WhatsApp">اطلب عرض سعر عبر
+              واتساب</span>
           </a>
         </div>
       </div>
@@ -2006,35 +2230,37 @@
           <div class="why-accent"></div>
           <h4 data-ar="+40 عام خبرة" data-en="40+ Years Experience">+40 عام خبرة</h4>
           <p data-ar="أكثر من 40 عامًا من الخبرة في التبريد والتكييف."
-            data-en="Over 40 years of expertise in cooling and HVAC.">أكثر من 40 عامًا من الخبرة في التبريد والتكييف.</p>
+            data-en="Over 40 years of expertise in cooling and HVAC.">أكثر من 40 عامًا من الخبرة في التبريد والتكييف.
+          </p>
         </div>
 
         <div class="why-item reveal-scale reveal-delay-2">
           <div class="why-accent"></div>
           <h4 data-ar="أمان كامل" data-en="Full Safety">أمان كامل</h4>
-          <p data-ar="حل آمن مقارنة بالسخانات التقليدية."
-            data-en="Safer than traditional water heaters.">حل آمن مقارنة بالسخانات التقليدية.</p>
+          <p data-ar="حل آمن مقارنة بالسخانات التقليدية." data-en="Safer than traditional water heaters.">حل آمن مقارنة
+            بالسخانات التقليدية.</p>
         </div>
 
         <div class="why-item reveal-scale reveal-delay-3">
           <div class="why-accent"></div>
           <h4 data-ar="توفير الطاقة" data-en="Energy Saving">توفير الطاقة</h4>
-          <p data-ar="توفير في الطاقة وتقليل التكاليف التشغيلية."
-            data-en="Energy savings and reduced operating costs.">توفير في الطاقة وتقليل التكاليف التشغيلية.</p>
+          <p data-ar="توفير في الطاقة وتقليل التكاليف التشغيلية." data-en="Energy savings and reduced operating costs.">
+            توفير في الطاقة وتقليل التكاليف التشغيلية.</p>
         </div>
 
         <div class="why-item reveal-scale reveal-delay-4">
           <div class="why-accent"></div>
           <h4 data-ar="خدمة شاملة" data-en="Complete Service">خدمة شاملة</h4>
           <p data-ar="خدمة شاملة تشمل البيع والتركيب وما بعد البيع."
-            data-en="Full service: sales, installation, and after-sales support.">خدمة شاملة تشمل البيع والتركيب وما بعد البيع.</p>
+            data-en="Full service: sales, installation, and after-sales support.">خدمة شاملة تشمل البيع والتركيب وما بعد
+            البيع.</p>
         </div>
 
         <div class="why-item reveal-scale reveal-delay-5">
           <div class="why-accent"></div>
           <h4 data-ar="تغطية المملكة" data-en="Nationwide">تغطية المملكة</h4>
-          <p data-ar="تغطية داخل المملكة في مختلف المناطق."
-            data-en="Coverage across all regions of Saudi Arabia.">تغطية داخل المملكة في مختلف المناطق.</p>
+          <p data-ar="تغطية داخل المملكة في مختلف المناطق." data-en="Coverage across all regions of Saudi Arabia.">تغطية
+            داخل المملكة في مختلف المناطق.</p>
         </div>
 
       </div>
@@ -2134,7 +2360,8 @@
         </button>
         <div class="faq-answer" data-ar="لا، الجهاز مصمم ليعمل بدون صيانة دورية. وفي حال احتجت أي دعم، فريقنا متوفر."
           data-en="No, designed to run maintenance-free. After-sales support is always available.">
-          <div class="faq-answer-inner">لا، الجهاز مصمم ليعمل بدون صيانة دورية. وفي حال احتجت أي دعم، فريقنا متوفر.</div>
+          <div class="faq-answer-inner">لا، الجهاز مصمم ليعمل بدون صيانة دورية. وفي حال احتجت أي دعم، فريقنا متوفر.
+          </div>
         </div>
       </div>
 
@@ -2158,7 +2385,8 @@
         </button>
         <div class="faq-answer" data-ar="نعم، نغطي جميع مناطق المملكة العربية السعودية — الرياض، جدة، الدمام، وغيرها."
           data-en="Yes — Riyadh, Jeddah, Dammam, and all other regions.">
-          <div class="faq-answer-inner">نعم، نغطي جميع مناطق المملكة العربية السعودية — الرياض، جدة، الدمام، وغيرها.</div>
+          <div class="faq-answer-inner">نعم، نغطي جميع مناطق المملكة العربية السعودية — الرياض، جدة، الدمام، وغيرها.
+          </div>
         </div>
       </div>
 
@@ -2174,7 +2402,9 @@
     <div class="container">
       <h2 data-ar="جاهز تحل مشكلة حرارة المياه؟" data-en="Ready to Solve Your Water Temperature Problem?">جاهز تحل
         مشكلة حرارة المياه؟</h2>
-      <p data-ar="اطلب استشارة مجانية الآن عبر واتساب، وخذ عرضًا مناسبًا لاحتياج منزلك." data-en="Request a free consultation now on WhatsApp and reach out on Whatsapp tailored to your home.">اطلب استشارة مجانية الآن عبر واتساب، وخذ عرضًا مناسبًا لاحتياج منزلك.</p>
+      <p data-ar="اطلب استشارة مجانية الآن عبر واتساب، وخذ عرضًا مناسبًا لاحتياج منزلك."
+        data-en="Request a free consultation now on WhatsApp and reach out on Whatsapp tailored to your home.">اطلب
+        استشارة مجانية الآن عبر واتساب، وخذ عرضًا مناسبًا لاحتياج منزلك.</p>
       <a href="https://wa.me/966554467711?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%A8%D8%BA%D9%89%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%A3%D9%85%D8%A7%D9%86%20%D9%83%D9%88%D9%84"
         target="_blank" rel="noopener" class="cta-main-btn">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--red)">
@@ -2196,14 +2426,15 @@
       <div class="footer-grid">
 
         <!-- Brand -->
-      <div>
-        <img src="logo.png" alt="أمان كول" height="100" style="margin-bottom:24px;">
-        <p class="footer-info">
-          info@amancool.com<br>
-          <span dir="ltr" style="unicode-bidi: embed; display: inline-block;">+966 55 446 7711</span><br>
-          <span data-ar="جدة، المملكة العربية السعودية" data-en="Jeddah, Saudi Arabia">جدة، المملكة العربية السعودية</span>
-        </p>
-      </div>
+        <div>
+          <img src="logo.png" alt="أمان كول" height="100" style="margin-bottom:24px;">
+          <p class="footer-info">
+            info@amancool.com<br>
+            <span dir="ltr" style="unicode-bidi: embed; display: inline-block;">+966 55 446 7711</span><br>
+            <span data-ar="جدة، المملكة العربية السعودية" data-en="Jeddah, Saudi Arabia">جدة، المملكة العربية
+              السعودية</span>
+          </p>
+        </div>
 
         <!-- Links -->
         <div>
